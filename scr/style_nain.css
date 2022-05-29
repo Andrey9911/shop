@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'bononi';
+    src: url('../scr/fonts/bodoni_[allfont.ru].ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 10px 0;
+    background-color: #F5F5F5;
+}
+svg:hover{cursor: pointer; color: #CD0074; transition: all ease .2s;}
+
+.notActive{display: none;}
+.block-with_content{
+    width: 90%;
+    padding: 10px 40px;
+    margin: 10px auto;
+}
+.space{width: 80%;}
+.flex_block{display: flex; align-items: center;}
+.block{
+    border: #000 2px solid;
+    box-shadow: 0 4px 7px 0 #0000007e;
+}
+.ico{width: 25px;height: 25px;}
+
+.ico-block,
+.search_block,
+#cart{position: relative; width: fit-content;}
+.block.none-shadow{box-shadow: none;}
+
+#header{
+    height: 60px;
+    background-color: #FFAA00;
+}
+    #logo{
+        font-family: 'bodoni';
+        font-size: 14px;
+        width: 80px;
+    }
+
+    #count_items{
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        padding: 0px 4px;
+        background-color: #A6005E;
+        border-radius: 50%;
+        color: white;
+        font-weight: 600;
+        font-size: .9em;
+    }
+        #cart-content{
+            z-index: 5;
+            font-family: 'bononi';
+            position: absolute;
+            top: 30px;
+            left: -190px;
+            background-color: white;
+            padding: 10px 20px;
+            width: 300px;
+        }
+            #items{
+                border-top: 1px solid #bebebe;
+                border-bottom:  1px solid #bebebe;
+                margin: 10px 0;
+            }
+            .but{
+                padding: 5px 10px;
+                background-color: #AAFF00;
+                color: white;
+                font-weight: 600;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                width: fit-content;
+            }
+            .but:hover{
+                cursor: pointer;
+                transition: all ease .4s;
+                background-color: #679B00;
+                transform: scale(1.1);
+            }
+    #user_wallet{
+        margin-left: 25px;
+    }
+
+#filtr{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #d1d1d1;
+    font-family: 'bononi';
+}
+    #search{padding: 3px 7px;}
+    #filtr-category_and_price{margin: 0 50px;}
+    #filtr-category{margin: 0 30px;}
+        .p{margin: 0 5px 0 0;}
+
+
+
