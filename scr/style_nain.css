@@ -7,10 +7,20 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --bgc-block: #fff;
+}
+.dark{
+    --bgc-body: rgb(34, 34, 34);
+}
 body{
     padding: 10px 0;
     background-color: #F5F5F5;
 }
+
+.fitr_cat_text,
+.fitr_price_text{cursor: pointer;}
+
 svg:hover{cursor: pointer; color: #CD0074; transition: all ease .2s;}
 
 .notActive{display: none;}
@@ -24,12 +34,20 @@ svg:hover{cursor: pointer; color: #CD0074; transition: all ease .2s;}
 .block{
     border: #000 2px solid;
     box-shadow: 0 4px 7px 0 #0000007e;
+    transition: all ease .5s;
 }
 .ico{width: 25px;height: 25px;}
 
 .ico-block,
 .search_block,
-#cart{position: relative; width: fit-content;}
+#cart,
+.filtr-price,
+.card_book,
+.item
+{position: relative; width: fit-content;}
+
+.block.hidden{display: none;}
+
 .block.none-shadow{box-shadow: none;}
 
 #header{
@@ -54,6 +72,7 @@ svg:hover{cursor: pointer; color: #CD0074; transition: all ease .2s;}
         font-size: .9em;
     }
         #cart-content{
+            -webkit-appearance: none !important;
             z-index: 5;
             font-family: 'bononi';
             position: absolute;
@@ -61,12 +80,35 @@ svg:hover{cursor: pointer; color: #CD0074; transition: all ease .2s;}
             left: -190px;
             background-color: white;
             padding: 10px 20px;
-            width: 300px;
+            width: 320px;
+            
+        } 
+        #cart-content::-webkit-scrollbar-track{
+            background-color: grey;
+            width: 7px;
+            border-radius: 7px;
         }
             #items{
                 border-top: 1px solid #bebebe;
                 border-bottom:  1px solid #bebebe;
                 margin: 10px 0;
+                height: 150px;
+                overflow-y: scroll;
+            }
+                .item{
+                    border-top: 1px solid #bebebe;
+                    border-bottom:  1px solid #bebebe;
+                    padding: 7px;
+
+                }
+                    .tb{width: 60px;padding: 5px; overflow-wrap: break-word;}
+
+                    .del{text-align: right;}
+                    
+                    .length{font-size: .9em; color: rgb(41, 41, 41);}
+           
+            #itemsv .price{
+
             }
             .but{
                 padding: 5px 10px;
@@ -85,6 +127,7 @@ svg:hover{cursor: pointer; color: #CD0074; transition: all ease .2s;}
     #user_wallet{
         margin-left: 25px;
     }
+#main{background-color: var(--bgc-block);}
 
 #filtr{
     width: 100%;
@@ -94,8 +137,68 @@ svg:hover{cursor: pointer; color: #CD0074; transition: all ease .2s;}
 }
     #search{padding: 3px 7px;}
     #filtr-category_and_price{margin: 0 50px;}
+        .filtr-price_content{
+            z-index: 5;
+            font-family: 'bononi';
+            position: absolute;
+            top: 30px;
+            left: 0;
+            background-color: white;
+            padding: 10px 20px;
+            width: fit-content;
+        }
+            .tablo_count_price{
+                text-align: center;
+                border: 1px solid rgb(200, 200, 200);
+                margin: 0;
+                width: 50px;
+                height: 20px;
+                border-radius: 2px;
+                /* padding: 5px 7px; */
+            }
+            .tablo_count_price:first-child{margin:0 50px 0 0;}
+
+            .range{margin-right: 20px;}
+                #range-price{
+                    -webkit-appearance: none !important;
+                    background-color: black;
+                    height: 3px;
+                }
+                #range-price::-webkit-slider-thumb{
+                    -webkit-appearance: none !important;
+                    background-color: #CD0074;
+                    width: 10px;
+                    height: 15px;
+                    border-radius: 5px;
+
+                }
     #filtr-category{margin: 0 30px;}
         .p{margin: 0 5px 0 0;}
 
 
 
+.card_book{
+    width: 160px;
+    height: 200px;
+    margin: 10px;
+    font-size: 1.2em;
+}
+.card_book:hover{
+    border: #000 2px solid;
+    box-shadow: 0 4px 7px 0 #0000007e;
+    transform: rotateZ(3deg);
+}
+    .card_title{
+        font-weight: 600;
+        font-family: 'bodoni';
+        font-size: 1.2em;
+        margin: 25px 0;
+
+    }
+    .card-bottom{position: absolute; bottom: 0;}
+        .price-book_text{
+            color: #CD0074;
+            margin: 0 0 0 10px;
+            
+            font-weight: 600;
+        }

@@ -1,0 +1,58 @@
+var books = [
+    {
+        title: 'Русский яз.',
+        authorName: 'rvberberbrtb evbebv',
+        categoryId: 1,
+        img: '',
+        price: 1443,
+    },
+    {
+        title: 'МЦЫРИ',
+        authorName: 'rvberberbrtb evbebv',
+        categoryId: 1,
+        img: '',
+        price: 1200,
+    },
+    {
+        title: 'мвмцууцуку пу',
+        authorName: 'rvberberbrtb evbebv',
+        categoryId: 1,
+        img: '',
+        price: 1500,
+    },
+    {
+        title: 'пкеп екпкеп',
+        authorName: 'rvberberbrtb evbebv',
+        categoryId: 1,
+        img: '',
+        price: 4000,
+    },
+    {
+        title: 'кепкеп',
+        authorName: 'rvberberbrtb evbebv',
+        categoryId: 1,
+        img: '',
+        price: 2300,
+    },
+    {
+        title: 'кепк е пркепке',
+        authorName: 'rvberberbrtb evbebv',
+        categoryId: 1,
+        img: '',
+        price: 1200,
+    },
+    {
+        title: 'кер кекркпрекке',
+        authorName: 'rvberberbrtb evbebv',
+        categoryId: 1,
+        img: '',
+        price: 10000,
+    },
+    {
+        title: 'керкеркерке',
+        authorName: 'rvberberbrtb evbebv',
+        categoryId: 1,
+        img: '',
+        price: 500,
+    },
+]
