@@ -30,23 +30,12 @@ svg:hover{cursor: pointer; color: #CD0074; transition: all ease .2s;}
     margin: 10px auto;
 }
 .space{width: 80%;}
-.flex_block{display: flex; align-items: center;}
 .block{
     border: #000 2px solid;
     box-shadow: 0 4px 7px 0 #0000007e;
     transition: all ease .5s;
 }
 .ico{width: 25px;height: 25px;}
-
-.ico-block,
-.search_block,
-#cart,
-.filtr-price,
-.card_book,
-.item
-{position: relative; width: fit-content;}
-
-.block.hidden{display: none;}
 
 .block.none-shadow{box-shadow: none;}
 
@@ -92,7 +81,8 @@ svg:hover{cursor: pointer; color: #CD0074; transition: all ease .2s;}
                 border-top: 1px solid #bebebe;
                 border-bottom:  1px solid #bebebe;
                 margin: 10px 0;
-                height: 150px;
+                height: fit-content;
+                max-height: 190px;
                 overflow-y: scroll;
             }
                 .item{

@@ -1,6 +1,7 @@
 function newBookInCart(name,price,length){
     let item = document.createElement('div')
-    item.setAttribute('class', 'item flex_block')
+    let card_item_obj = filtrArrayForFindBook()
+    item.setAttribute('class', 'item position-relative')
     item.innerHTML = '<table>'+
     '<tr>'+
         '<td><div class="name tb">'+name+'</div></td>'+
