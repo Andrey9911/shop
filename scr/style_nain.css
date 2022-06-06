@@ -92,6 +92,7 @@ svg:hover{cursor: pointer; color: #CD0074; transition: all ease .2s;}
 
                 }
                     .tb{width: 60px;padding: 5px; overflow-wrap: break-word;}
+                    .tr{align-items: center;}
 
                     .del{text-align: right;}
                     
@@ -164,6 +165,14 @@ svg:hover{cursor: pointer; color: #CD0074; transition: all ease .2s;}
                 }
     #filtr-category{margin: 0 30px;}
         .p{margin: 0 5px 0 0;}
+                .cat_cont{background-color: white; list-style-type: none; z-index: 5;top: 30px; padding: 0; font-family: 'bononi';}
+                .cat_cont li{
+                    padding: 7px 15px;
+                    cursor: pointer;
+                }
+                .cat_cont li:hover{
+                    background-color: #aaff004d;
+                }
 
 
 
@@ -183,6 +192,7 @@ svg:hover{cursor: pointer; color: #CD0074; transition: all ease .2s;}
         font-family: 'bodoni';
         font-size: 1.2em;
         margin: 25px 0;
+        justify-content: center;
 
     }
     .card-bottom{position: absolute; bottom: 0;}
@@ -192,3 +202,27 @@ svg:hover{cursor: pointer; color: #CD0074; transition: all ease .2s;}
             
             font-weight: 600;
         }
+
+@media screen and (max-width: 1000px){
+    .card_book{margin: 24px;}
+    .block-with_content{
+        width: 100%;
+        margin: 0;
+    }
+    body{padding: 0;}
+}
+@media screen and (max-width: 800px){
+    #search{padding: 10px;width: 300px;}
+    svg{width: 25px;height: 25px;}
+    .p{display: none;}
+    #filtr-category_and_price{margin-left: 20%;}
+    #filtr-price_content{left: -100px;}
+}
+@media screen and (max-width: 550px){
+    #cart-content{
+        left: -380px;
+        width: 500px;
+    }
+    .item td{width: 105px;}
+    svg{width: 40px;height: 40px;}
+}
